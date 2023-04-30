@@ -1,0 +1,56 @@
+what is a singleton?
+In software development, a singleton is a design pattern that restricts the instantiation of a class to a single instance and provides a global point of access to that instance. In other words, a singleton ensures that only one object of a class is created and shared across the entire application.
+
+The singleton pattern is often used when a single instance of a class is needed to coordinate actions across the system, such as managing a shared resource or controlling access to a database. By ensuring that only one instance of the class exists, the singleton pattern helps to avoid issues related to multiple instances of the same object, such as inconsistent data or conflicts over shared resources.
+
+In order to implement a singleton pattern, the class constructor is made private to prevent the creation of new instances of the class from outside the class. A static method or variable is then used to provide access to the single instance of the class, which is created the first time the static method is called. Subsequent calls to the static method will return the same instance of the class.
+
+It is worth noting that the singleton pattern has both benefits and drawbacks. On the one hand, it can simplify the management of shared resources and help to ensure consistent behavior across the system. On the other hand, it can make testing and debugging more difficult and can create issues with dependencies and code maintainability. Therefore, the decision to use a singleton should be made carefully, taking into consideration the specific needs and requirements of the application.
+
+---------------------------------------------------------------------------------
+what is the scope of spring bean? 
+In Spring Framework, the scope of a bean determines the lifecycle and visibility of that bean within the Spring container. The Spring Framework provides several built-in scopes for beans, including:
+
+Singleton: The default scope for a Spring bean. A single instance of the bean is created and shared across the entire application.
+
+Prototype: A new instance of the bean is created each time it is requested from the Spring container.
+
+Request: A new instance of the bean is created for each HTTP request.
+
+Session: A new instance of the bean is created for each HTTP session.
+
+Global session: Similar to the session scope, but for global HTTP sessions in a Portlet context.
+
+Application: A single instance of the bean is created for each ServletContext.
+
+Websocket: A new instance of the bean is created for each Websocket session.
+
+The choice of scope depends on the specific needs of the application. Singleton scope is the most commonly used scope and is suitable for stateless objects such as services, DAOs, and utility classes. Prototype scope is suitable for stateful objects such as web controllers or objects that require a new instance for each use. Request, session, and global session scopes are suitable for web applications where the same bean needs to be available across multiple requests or sessions. The application scope is suitable for objects that need to be shared across multiple servlets in the same application context. The websocket scope is suitable for objects that need to be shared across multiple WebSocket sessions.
+
+The scope of a Spring bean is defined in the bean configuration using the @Scope annotation or in the XML configuration file using the scope attribute.
+
+---------------------------------------------------------------------------------
+
+what is dependency injection
+Dependency Injection (DI) is a design pattern used in software development and specifically in the Spring Framework to reduce coupling between classes and to make code more modular, maintainable, and testable.
+
+In DI, the dependencies of a class are passed to it from outside, rather than being created within the class itself. This is typically accomplished through constructor injection or setter injection, where the dependencies are provided as parameters to the constructor or setter method, respectively. The Spring Framework provides an Inversion of Control (IoC) container that manages the creation and injection of dependencies.
+
+By using DI, classes can be written in a more modular and testable way, with dependencies easily replaced with mock objects during testing. It also helps to reduce coupling between classes, as each class only depends on the interfaces of its dependencies rather than their concrete implementations.
+
+DI is a fundamental concept in the Spring Framework, and is used extensively throughout the framework, including in the creation of Spring beans, the injection of configuration properties, and the injection of external dependencies such as database connections or message queues.
+---------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------------------------------------

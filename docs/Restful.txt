@@ -1,0 +1,30 @@
+Restful API
+
+REST (Representational State Transfer) is an architectural style used for building web-based APIs (Application Programming Interfaces). REST APIs are designed to be simple, scalable, and easy to use. Here are some of the key principles of REST APIs:
+
+1. Client-server architecture: The client-server architecture is a key principle of REST. It separates the concerns of the client and the server, making them independent of each other. This allows for more flexibility and scalability in the application.
+
+2. Stateless: REST APIs are stateless, which means that each request sent to the server should contain all the necessary information to complete the request. The server should not keep any client-specific data between requests. This makes it easier to scale the application horizontally and improves reliability.
+
+3. Uniform interface: REST APIs should have a uniform interface that defines how clients interact with the server. This includes a set of standard HTTP methods (GET, POST, PUT, DELETE) for CRUD (Create, Read, Update, Delete) operations and standard response codes (200 OK, 404 Not Found, etc.) for indicating the status of the request.
+
+4. Resource-based: REST APIs are resource-based, which means that each resource (such as a user, a product, or an order) is identified by a unique URL. Clients can interact with resources using standard HTTP methods and exchange representations of the resources in a variety of formats, such as JSON or XML.
+
+5. Self-descriptive messages: REST APIs should use self-descriptive messages that contain enough information for the client to understand the response without additional information. This includes the use of standard media types, such as JSON or XML, and the use of hypermedia controls, such as links, to navigate between resources.
+
+6. Layered system: REST APIs should be designed as a layered system, where each layer provides a specific functionality, and the communication between layers is defined by a standard interface. This improves scalability and flexibility in the application architecture.
+
+These principles form the foundation of REST APIs and help to ensure that they are scalable, reliable, and easy to use. By following these principles, developers can build APIs that can be easily consumed by clients and can evolve over time without breaking compatibility with existing clients.
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------------------------------------

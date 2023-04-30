@@ -1,0 +1,103 @@
+what is the difference between callable and runnable? 
+In Java, both Callable and Runnable are interfaces used for implementing multi-threading functionality, but they have some differences in terms of their return value, exception handling, and usage.
+
+Return Value:
+The main difference between Callable and Runnable is that Callable has a return value while Runnable does not. The Callable interface has a single method, call(), which returns a value of type V, whereas the Runnable interface has a single method, run(), that does not return any value.
+
+Exception Handling:
+Callable allows throwing a checked exception while Runnable does not. The call() method of Callable can throw a checked exception, which must be caught or declared to be thrown, whereas the run() method of Runnable cannot throw checked exceptions.
+
+Usage:
+Callable is typically used when a thread needs to return a value or when it needs to throw a checked exception, whereas Runnable is used when a thread does not need to return a value or when it can throw only unchecked exceptions.
+
+In summary, Callable is used when a thread needs to return a value or when it needs to throw a checked exception, while Runnable is used when a thread does not need to return a value or when it can throw only unchecked exceptions.
+-------------------------------------------------------------------------------------------------------------
+
+what is the difference between String equals method and object equals method in java
+In Java, the equals() method is used to compare two objects for equality. The Object class provides an implementation of the equals() method that tests for reference equality, which means that it returns true only if the two objects being compared are the same object in memory.
+
+However, many classes in Java override the equals() method to provide a more meaningful comparison of objects based on their properties, rather than their memory location. The String class is one such example.
+
+The difference between String's equals() method and Object's equals() method is that String's equals() method compares the content of two String objects, while Object's equals() method compares the reference of two objects.
+
+For example, consider the following code:
+
+vbnet
+Copy code
+String s1 = "hello";
+String s2 = new String("hello");
+Object o1 = new Object();
+Object o2 = new Object();
+
+System.out.println(s1.equals(s2)); // true
+System.out.println(o1.equals(o2)); // false
+In this example, the first println() statement compares the content of the two String objects (s1 and s2), which are equal, so it returns true. The second println() statement compares the reference of the two Object objects (o1 and o2), which are different, so it returns false.
+
+In summary, the String class overrides the equals() method to compare the content of two String objects, while the Object class provides an implementation that compares the reference of two objects.
+
+---------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------
+what is completablefuture in spring boot? 
+CompletableFuture is a feature of the Java standard library that allows for asynchronous programming and non-blocking I/O operations. It provides a way to chain together asynchronous tasks and define what should happen when those tasks complete or fail.
+
+In Spring Boot, CompletableFuture is commonly used in combination with reactive programming libraries like Reactor or RxJava to handle asynchronous I/O operations. For example, a CompletableFuture can be returned from a REST endpoint or service method to allow the caller to receive a response immediately while the actual operation continues in the background.
+
+CompletableFuture provides several methods to create and manipulate futures, including supplyAsync, thenApply, thenCompose, and exceptionally. These methods allow for chaining together of operations that can be executed asynchronously, and the ability to handle errors or exceptions that may occur during the execution of those operations.
+
+Overall, CompletableFuture is a powerful feature of the Java standard library that can help developers build scalable and responsive applications that can handle a large number of concurrent requests and perform non-blocking I/O operations efficiently.
+
+---------------------------------------------------------------------------------
+what is difference between comparable and comparator?
+In Java, Comparable and Comparator are interfaces used to sort collections of objects, but they differ in how they compare and sort the objects.
+
+Comparable is an interface that is implemented by a class to provide natural ordering of objects of that class. It defines a single method, compareTo, which takes an object of the same type and returns a negative integer, zero, or a positive integer depending on whether the current object is less than, equal to, or greater than the specified object.
+
+Comparator, on the other hand, is an interface that defines a comparison function that can be used to sort collections of objects that do not implement Comparable, or to sort collections in a different way than their natural order. It defines a single method, compare, which takes two objects of the same type and returns a negative integer, zero, or a positive integer depending on whether the first object is less than, equal to, or greater than the second object.
+
+In summary, Comparable is used to define the natural ordering of objects, while Comparator is used to define a custom ordering of objects or to sort objects that do not have a natural ordering. Classes that implement Comparable can be sorted using the Collections.sort() method, while classes that do not implement Comparable can be sorted using the Collections.sort() method with a Comparator object passed as a parameter.
+
+---------------------------------------------------------------------------------
+what is reflection api  in java? what are its uses? 
+In Java, the Reflection API is a set of classes and interfaces that allows developers to inspect, modify, and create objects, classes, and interfaces at runtime. It enables a program to obtain information about the classes and objects it uses, and to manipulate their behavior, structure, and state dynamically.
+
+The Reflection API can be used for a variety of purposes, including:
+
+Creating new objects dynamically: Using reflection, you can create new instances of classes and invoke their methods or access their fields at runtime.
+
+Inspecting object metadata: Reflection allows you to obtain information about the methods, fields, constructors, annotations, and interfaces of a class or object, and to manipulate them dynamically.
+
+Debugging and profiling: Reflection can be used to inspect the state and behavior of objects and classes at runtime, which is useful for debugging and profiling applications.
+
+Dynamic class loading: Reflection can be used to load classes dynamically at runtime, which is useful for applications that need to load classes based on user input or configuration.
+
+Serialization and deserialization: Reflection is used by the Java serialization and deserialization mechanisms to inspect and manipulate the fields of objects being serialized or deserialized.
+
+While the Reflection API can be powerful and flexible, it can also be slow and error-prone if not used carefully. It can make code harder to read and understand, and can introduce security vulnerabilities if not used securely. Therefore, it is generally recommended to use reflection sparingly and only when necessary, and to consider alternative solutions when possible.
+
+---------------------------------------------------------------------------------
+what is the difference between hashmap and flatmap? 
+HashMap and flatMap are two different concepts in Java, and they are not directly comparable.
+
+HashMap is a class in Java's collections framework that provides a way to store key-value pairs in a map. It allows you to look up values in the map by their corresponding keys, and is implemented using a hash table data structure.
+
+On the other hand, flatMap is a method in Java's stream API that is used to flatten a stream of streams into a single stream. It is used to transform each element in a stream into a new stream, and then to concatenate the resulting streams into a single stream.
+
+In summary, HashMap is a data structure used for storing key-value pairs, while flatMap is a method used for manipulating streams in Java.
+-------------------------------------------------------------------------------------------------------------
+Why are strings immutable?
+In Java, strings are immutable because of several reasons:
+
+1. Security: Strings are widely used to store sensitive information like passwords, bank account numbers, etc. If strings were mutable, an attacker could change the contents of a string after it has been created, potentially compromising the security of the system. By making strings immutable, Java ensures that once a string is created, its value cannot be changed.
+
+2. Thread safety: Since strings are immutable, they can be safely shared among multiple threads without the need for synchronization. This improves the performance of multithreaded applications.
+
+3. Caching: Because strings are immutable, Java can cache their values, which can improve performance. For example, if two string objects have the same value, they can share the same memory location, which saves memory.
+
+4. Performance: Because strings are immutable, Java can optimize string manipulation operations. For example, when you concatenate two strings, Java can create a new string object that contains the concatenation result, instead of modifying the original strings. This can improve performance by reducing the number of object creations and garbage collections.
+
+Overall, immutability provides several benefits in Java, including security, thread safety, caching, and performance optimization, which makes it a preferred approach for strings.
+
+-------------------------------------------------------------------------------------------------------------
