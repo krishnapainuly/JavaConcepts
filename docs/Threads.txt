@@ -73,7 +73,9 @@ The `ThreadLocal` class is commonly used in multi-threaded applications to store
 
 ---------------------------------------------------------------------------------
 
+https://swathisprasad.medium.com/multi-threading-in-spring-boot-using-completablefuture-a7ca68a0fe48
 
+https://www.codingninjas.com/codestudio/library/multithreading-in-java-spring-boot
 ---------------------------------------------------------------------------------
 what is reflection api  in java? what are its uses? 
 In Java, the Reflection API is a set of classes and interfaces that allows developers to inspect, modify, and create objects, classes, and interfaces at runtime. It enables a program to obtain information about the classes and objects it uses, and to manipulate their behavior, structure, and state dynamically.

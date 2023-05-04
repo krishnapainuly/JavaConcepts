@@ -1,0 +1,24 @@
+What is compile time polymorphism?
+When a polymorphic call is made, and the compiler knows which function is to be called; this is known as compile-time polymorphism. The features like function default arguments, overloading  support compile-time polymorphism. 
+
+----------------------------------------------------------
+25. What is encapsulation?
+Encapsulation is the process of binding data members and methods of a program together to do a specific job, without revealing unnecessary details.
+Encapsulation can also be defined in two different ways:
+
+1) Data hiding: Encapsulation is the process of hiding unwanted information, such as restricting access to any member of an object.
+
+2) Data binding: Encapsulation is the process of binding the data members and the methods together as a whole, as a class
+----------------------------------------------------------
+28. What is data abstraction?
+Data abstraction is a very important feature of OOPs that allows displaying only the important information and hiding the implementation details. For example, while riding a bike, you know that if you raise the accelerator, the speed will increase, but you don’t know how it actually happens. This is data abstraction as the implementation details are hidden from the rider.
+
+29. How to achieve data abstraction?
+Data abstraction can be achieved through:
+Abstract class
+Abstract method
+----------------------------------------------------------
+What is polymorphism?
+
+Polymorphism refers to the ability to exist in multiple forms. Multiple definitions can be given to a single interface. For example, if you have a class named Vehicle, it can have a method named speed but you cannot define it because different vehicles have different speed. This method will be defined in the subclasses with different definitions for different vehicles.
+

@@ -1,0 +1,31 @@
+FROM openjdk:8-alpine
+ADD  ./target/*.jar app.jar
+
+COPY ./tmoroote.crt /tmp/tmo-root.crt
+
+# T-Mobile Enterprise Root CA
+ARG TMP_CERT="/tmp/tmo-root"
+
+ARG JAVA_KEYSTORE_PASS=changeit
+RUN set -x && \
+          ls -lrt ${JAVA_HOME} && \
+          ${JAVA_HOME}/bin/keytool \
+            -import \
+            -noprompt \
+            -storepass "${JAVA_KEYSTORE_PASS}" \
+            -keystore "${JAVA_HOME}/jre/lib/security/cacerts" \
+            -file "${TMP_CERT}.crt" \
+            -alias tmo-root-ca
+
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "/app.jar"]
+#CMD ["--spring.config.location=classpath:/bootstrap.yml"]
+CMD ["--spring.config.location=/opt/app/config/data.yaml,/opt/app/secrets/secrets.yml"]
+
+
+mvn clean package
+
+-t = Name and optionally a tag in the name:tag format
+-p = port
+docker build -t nativeservicexapi:latest "."
+docker run  -p 127.0.0.1:80:8080/tcp  rsom-tap-xapi

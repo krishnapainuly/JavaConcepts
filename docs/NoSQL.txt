@@ -1,0 +1,13 @@
+NoSQL (Not Only SQL) is a type of database management system that is designed to handle large volumes of unstructured or semi-structured data. Unlike traditional relational databases, NoSQL databases do not use a fixed schema and do not require a predefined schema for data storage. Instead, they use a flexible, document-oriented approach to data modeling that allows for rapid and scalable development.
+
+NoSQL databases can be divided into several categories:
+
+1. Document databases: These databases store data in JSON or XML-like documents and allow for flexible and scalable data storage. Examples include MongoDB, Couchbase, and CouchDB.
+
+2. Key-value stores: These databases use a simple key-value model for data storage and retrieval. They are ideal for high-speed data access and can be used for caching and session management. Examples include Redis, Riak, and Aerospike.
+
+3. Column-family stores: These databases store data in columns, which allows for fast read and write operations on large volumes of data. They are ideal for data warehousing and analytics. Examples include Apache Cassandra, Apache HBase, and Amazon DynamoDB.
+
+4. Graph databases: These databases store data in nodes and edges, which allows for efficient management of complex data relationships. They are ideal for social networks, recommendation systems, and fraud detection. Examples include Neo4j, ArangoDB, and OrientDB.
+
+NoSQL databases are often used in modern, distributed systems that require fast and scalable data access. They are also commonly used in web and mobile applications that handle large volumes of unstructured data such as user-generated content, social media feeds, and sensor data.

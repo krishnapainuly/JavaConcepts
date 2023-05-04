@@ -15,16 +15,15 @@ REST (Representational State Transfer) is an architectural style used for buildi
 6. Layered system: REST APIs should be designed as a layered system, where each layer provides a specific functionality, and the communication between layers is defined by a standard interface. This improves scalability and flexibility in the application architecture.
 
 These principles form the foundation of REST APIs and help to ensure that they are scalable, reliable, and easy to use. By following these principles, developers can build APIs that can be easily consumed by clients and can evolve over time without breaking compatibility with existing clients.
-------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------------------------
 
 
 
-------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
 
 
 
-------------------------------------------------------------------------------------------------------------------------
-
-
-
-------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
