@@ -1,0 +1,29 @@
+What is continuous integration?
+
+Continuous integration (CI) is the practice of automating the integration of code changes from multiple contributors into a single software project. It’s a primary DevOps best practice, allowing developers to frequently merge code changes into a central repository where builds and tests then run. Automated tools are used to assert the new code’s correctness before integration.
+
+https://www.atlassian.com/continuous-delivery/continuous-integration
+----------------------------------------------------------------------------------------------------------
+What do you understand about cloud computing?
+
+
+----------------------------------------------------------------------------------------------------------
+What are the benefits of using continuous integration and continuous delivery?
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------------------

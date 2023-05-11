@@ -1,0 +1,66 @@
+https://www.ibm.com/topics/cloud-computing
+
+What is cloud computing?
+Cloud computing is on-demand access, via the internet, to computing resources—applications, servers (physical servers and virtual servers), data storage, development tools, networking capabilities, and more—hosted at a remote data center managed by a cloud services provider (or CSP). 
+----------------------------------------------------------------------------------------------------------
+
+Lower IT costs: Cloud lets you offload some or most of the costs and effort of purchasing, installing, configuring, and managing your own on-premises infrastructure.
+
+Improve agility and time-to-value: With cloud, your organization can start using enterprise applications in minutes, instead of waiting weeks or months for IT to respond to a request, purchase and configure supporting hardware, and install software. 
+
+Scale more easily and cost-effectively: Cloud provides elasticity—instead of purchasing excess capacity that sits unused during slow periods, you can scale capacity up and down in response to spikes and dips in traffic. You can also take advantage of your cloud provider’s global network to spread your applications closer to users around the world.
+----------------------------------------------------------------------------------------------------------
+
+Cloud computing services
+SaaS (Software-as-a-Service):  also known as cloud-based software or cloud applications—is application software that’s hosted in the cloud, and that users access via a web browser, a dedicated desktop client, or an API that integrates with a desktop or mobile operating system. 
+SaaS users pay a monthly or annual subscription fee; some may offer ‘pay-as-you-go’ pricing based on your actual usage.
+
+Automatic upgrades: With SaaS, users take advantage of new features as soon as the provider adds them, without having to orchestrate an on-premises upgrade.
+
+Protection from data loss: Because SaaS stores application data in the cloud with the application, users don’t lose data if their device crashes or breaks.
+Example: Dropbox, Google workspace, Docusign, Microsoft 365
+----------------------------------------------------------------------------------------------------------
+PaaS (Platform-as-a-Service)
+
+PaaS, is a type of cloud computing service model that offers a flexible, scalable cloud platform to develop, deploy, run, and manage apps.
+
+PaaS provides software developers with on-demand platform—hardware, complete software stack, infrastructure, and even development tools—for running, developing, and managing applications without the cost, complexity, and inflexibility of maintaining that platform on-premises.
+With PaaS, the cloud provider hosts everything—servers, networks, storage, operating system software, middleware, databases—at their data center. 
+
+PaaS is often built around containers, a virtualized compute model one step removed from virtual servers. Containers virtualize the operating system, enabling developers to package the application with only the operating system services it needs to run on any platform, without modification and without need for middleware.
+
+Red Hat OpenShift is a popular PaaS built around Docker containers and Kubernetes, an open source container orchestration solution that automates deployment, scaling, load balancing, and more for container-based applications.
+
+Example: Google Cloud, Azure, Heroku, Cloud Foundry, Cisco Webex
+----------------------------------------------------------------------------------------------------------
+
+IaaS (Infrastructure-as-a-Service)
+IaaS provides on-demand access to fundamental computing resources—physical and virtual servers, networking, and storage—over the internet on a pay-as-you-go basis. IaaS enables end users to scale and shrink resources on an as-needed basis, reducing the need for high, up-front capital expenditures or unnecessary on-premises or ‘owned’ infrastructure and for overbuying resources to accommodate periodic spikes in usage.  
+
+Example: AWS, MS Azure, Google Compute Engine
+
+----------------------------------------------------------------------------------------------------------
+
+Serverless is a cloud-native development model that allows developers to build and run applications without having to manage servers. There are still servers in serverless, but they are abstracted away from app development.
+Example: AWS Lambda, Microsoft Azure Functions, Google Cloud Functions
+----------------------------------------------------------------------------------------------------------
+
+Types of cloud computing
+
+Public Cloud
+Private cloud
+Hybrid cloud
+Multicloud and hybrid multicloud
+
+
+----------------------------------------------------------------------------------------------------------
+Cloud security
+
+Shared responsibility for security
+Data encryption
+User identity and access management
+Collaborative management
+Security and compliance monitoring
+----------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------

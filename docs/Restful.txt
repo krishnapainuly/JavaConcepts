@@ -17,13 +17,20 @@ REST (Representational State Transfer) is an architectural style used for buildi
 These principles form the foundation of REST APIs and help to ensure that they are scalable, reliable, and easy to use. By following these principles, developers can build APIs that can be easily consumed by clients and can evolve over time without breaking compatibility with existing clients.
 ----------------------------------------------------------------------------------------------------------------
 
+What is the difference between http & https?
 
-----------------------------------------------------------------------------------------------------------------
+HTTP (Hypertext Transfer Protocol) and HTTPS (Hypertext Transfer Protocol Secure) are two different protocols used for transferring data over the internet.
+
+HTTP is an application-layer protocol used to transfer data from a web server to a web browser. It operates on TCP/IP port 80 by default, and the data transmitted is not encrypted. This means that any data being sent over an HTTP connection can be intercepted and read by anyone who has access to the network.
+
+HTTPS, on the other hand, is a secure version of HTTP. It uses a secure SSL/TLS (Secure Sockets Layer/Transport Layer Security) connection to encrypt data that is transmitted between a web server and a web browser. HTTPS operates on TCP/IP port 443 by default. The use of encryption ensures that data transmitted over an HTTPS connection cannot be easily intercepted or read by unauthorized third parties.
+
+In summary, the main difference between HTTP and HTTPS is that HTTPS provides a layer of security by encrypting data, while HTTP does not.
+
+----------------------------------------------------------------------------------------------------------
 
 
-
-----------------------------------------------------------------------------------------------------------------
-
+----------------------------------------------------------------------------------------------------------
 
 
-----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------

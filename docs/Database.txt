@@ -1,0 +1,116 @@
+Horizontal scaling (scale-out)
+When you need more capacity, you can add more servers to the cluster.
+
+Advantages of Horizontal Scaling:
+It is easy to upgrade
+It is simple to implement and costs less
+It offers flexible, scalable tools
+It has limitless scaling with unlimited addition of server instances
+Upgrading a horizontally scaled database is easy – just add a node to the server
+
+Disadvantages of Horizontal Scaling:
+Any bugs in the code will become more complex to debug and understand
+The licensing fee is expensive as you will have more nodes that are licensed
+The cost of the data center will increase significantly because of the increased space, cooling, and power required
+
+When to use horizontal scaling:
+If you are dealing with more than a thousand users, it is best to use this scaling system because when the servers receive multiple user requests, everything will scale well.
+
+It will also not crash because there are multiple servers.
+----------------------------------------------------------------------------------------------------------
+
+Vertical scaling (scale-up)
+The vertical scaling approach increases the capacity of a single machine by increasing the resources in the same logical server. This involves adding resources like memory, storage, and processing power to existing software, enhancing its performance.
+
+Advantages of Vertical Scaling:
+The cost of the data center for the space, cooling, and power will be smaller
+It is a cost-efficient software
+It is easy to use and implement – the administrator can easily manage and maintain the software
+The resources for this approach are flexible
+
+Disadvantages of Vertical Scaling:
+The cost may be low, but you will need to pay for a license each time you scale up
+The hardware costs more because of high-end servers
+There is a limit to the amount you can upgrade
+You are restricted to a single database vendor, and migration is challenging, or you may need to start ove
+
+When to use vertical scaling:
+The vertical scaling approach is for you if you need a system with unique data consistency.
+
+If you don't want to worry about balancing the server's workload, vertical scaling is the best option.
+----------------------------------------------------------------------------------------------------------
+
+Which scaling method is best for your app?
+When choosing how to scale your database, you must consider what's at stake when you scale up and out.
+
+Now we'll take a look at some factors to consider so you can choose which scaling system is best for your app:
+
+Load balancing
+The vertical scaling system is best for balancing loads because you have a single server (vertical scaling), and there is no need to balance your load. Horizontal scaling requires you to balance the workload evenly.
+
+Point of failure
+The horizontal scaling system has more than one server, so when one server crashes, the next one picks up the slack. This means that there is no single point of failure which makes the system resilient.
+
+But in the vertical scaling system, there is only one server, so once the server crashes, everything goes offline.
+
+Speed
+In terms of speed, the vertical scaling system is faster because, since it runs on one server, the vertical scaling system has an interprocess communication – that is, the server communicates within itself and it's fast.
+
+The horizontal scaling system has network calls between two or more servers. This is also known as Remote Procedure Calls (RPC). RPCs are slow, though.
+
+Data consistency
+When dealing with servers, you'll need to make sure that the data stored in them is consistent when end users send a request.
+
+The vertical scaling system is data consistent because all information is on a single server. But the horizontal scaling system is scaled out with multiple servers, so data consistency can be a huge issue.
+
+Hardware limitations
+The horizontal scaling system scales well because the number of servers you throw at a request is linear to the number of users in the database or server. The vertical scaling system, on the other hand, has a limitation because everything runs on a single server.
+
+When choosing a system to scale your database, make sure to make a pros and cons list of the information in this article. It will help you decide which to use.
+----------------------------------------------------------------------------------------------------------
+
+SQL											NoSQL
+Works with the relational database system	Works with the distributed database system
+Vertically scalable							Horizontally scalable
+Systems are fixed and not flexible			Systems are dynamic and flexible
+Failure in hierarchical data storage		Perfect for hierarchical data storage
+Any complex queries can be used				Not suitable for complex queries
+
+----------------------------------------------------------------------------------------------------------
+What are different kinds of Data Replication?
+Master-slave replication - In this kind of replication the master serves both read and write requests, and replicates the writes to one or more slaves. The slaves serve read requests only. If the master goes down, the system will continue to serve in read-only mode until the system promotes a slave to a master, or until a new master is provisioned.
+
+Master-master replication - In this kind of replication multiple masters serve read and write requests. The writes are replicates to all master servers. The masters are fronted with a load balancer, and even if a master goes down the system will continue to serve read and write requests from the other masters
+
+----------------------------------------------------------------------------------------------------------
+
+Database sharding is a technique for horizontal scaling of databases, where the data is split across multiple database instances, or shards, to improve performance and reduce the impact of large amounts of data on a single database.
+
+----------------------------------------------------------------------------------------------------------
+Advantages of Sharding
+
+Solve Scalability Issue
+High Availability
+Speed Up Query Response Time
+More Write Bandwidth
+Scaling Out
+----------------------------------------------------------------------------------------------------------
+Disadvantages of Sharding
+
+Adds Complexity in the System
+Rebalancing  data
+Joining Data From Multiple Shards is Expensive
+No Native Support
+----------------------------------------------------------------------------------------------------------
+Sharding Architectures
+1. Key Based Sharding
+2. Horizontal or Range Based Sharding 
+3. Vertical Sharding
+4. Directory-Based Sharding
+
+
+----------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------

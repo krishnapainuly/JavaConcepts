@@ -1,6 +1,8 @@
 what is a singleton?
 In software development, a singleton is a design pattern that restricts the instantiation of a class to a single instance and provides a global point of access to that instance. In other words, a singleton ensures that only one object of a class is created and shared across the entire application.
 
+Singleton pattern is used for logging, drivers objects, caching, and thread pool.
+
 The singleton pattern is often used when a single instance of a class is needed to coordinate actions across the system, such as managing a shared resource or controlling access to a database. By ensuring that only one instance of the class exists, the singleton pattern helps to avoid issues related to multiple instances of the same object, such as inconsistent data or conflicts over shared resources.
 
 In order to implement a singleton pattern, the class constructor is made private to prevent the creation of new instances of the class from outside the class. A static method or variable is then used to provide access to the single instance of the class, which is created the first time the static method is called. Subsequent calls to the static method will return the same instance of the class.

@@ -8,13 +8,9 @@ Cloud architecture, on the other hand, refers to the deployment of computer syst
 Here are some key differences between on-premise and cloud architecture:
 
 1. Cost: On-premise architecture requires significant upfront capital investment in hardware and infrastructure, while cloud architecture offers a pay-as-you-go pricing model, which can be more cost-effective for smaller businesses.
-
 2. Scalability: Cloud architecture offers greater scalability, as organizations can easily scale up or down their resources as needed, while on-premise architecture may require significant hardware upgrades to support increased workloads.
-
 3. Control: On-premise architecture offers greater control over systems and data, as organizations own and manage their own hardware and infrastructure, while cloud architecture means that organizations rely on third-party providers for their systems and data.
-
 4. Maintenance: On-premise architecture requires ongoing maintenance and support costs, while cloud architecture means that maintenance and support are typically included in the service provided by the cloud provider.
-
 Overall, both on-premise and cloud architecture have their advantages and disadvantages, and the choice between them depends on the specific needs and requirements of the organization.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------

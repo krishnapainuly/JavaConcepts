@@ -11,7 +11,7 @@ Usage:
 Callable is typically used when a thread needs to return a value or when it needs to throw a checked exception, whereas Runnable is used when a thread does not need to return a value or when it can throw only unchecked exceptions.
 
 In summary, Callable is used when a thread needs to return a value or when it needs to throw a checked exception, while Runnable is used when a thread does not need to return a value or when it can throw only unchecked exceptions.
--------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
 
 what is the difference between String equals method and object equals method in java
 In Java, the equals() method is used to compare two objects for equality. The Object class provides an implementation of the equals() method that tests for reference equality, which means that it returns true only if the two objects being compared are the same object in memory.
@@ -60,6 +60,7 @@ Comparator, on the other hand, is an interface that defines a comparison functio
 In summary, Comparable is used to define the natural ordering of objects, while Comparator is used to define a custom ordering of objects or to sort objects that do not have a natural ordering. Classes that implement Comparable can be sorted using the Collections.sort() method, while classes that do not implement Comparable can be sorted using the Collections.sort() method with a Comparator object passed as a parameter.
 
 ---------------------------------------------------------------------------------
+
 what is reflection api  in java? what are its uses? 
 In Java, the Reflection API is a set of classes and interfaces that allows developers to inspect, modify, and create objects, classes, and interfaces at runtime. It enables a program to obtain information about the classes and objects it uses, and to manipulate their behavior, structure, and state dynamically.
 
@@ -86,7 +87,8 @@ HashMap is a class in Java's collections framework that provides a way to store 
 On the other hand, flatMap is a method in Java's stream API that is used to flatten a stream of streams into a single stream. It is used to transform each element in a stream into a new stream, and then to concatenate the resulting streams into a single stream.
 
 In summary, HashMap is a data structure used for storing key-value pairs, while flatMap is a method used for manipulating streams in Java.
--------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
 Why are strings immutable?
 In Java, strings are immutable because of several reasons:
 
@@ -100,4 +102,4 @@ In Java, strings are immutable because of several reasons:
 
 Overall, immutability provides several benefits in Java, including security, thread safety, caching, and performance optimization, which makes it a preferred approach for strings.
 
--------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
