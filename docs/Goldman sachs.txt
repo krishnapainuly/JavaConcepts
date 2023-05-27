@@ -1,0 +1,127 @@
+What is the difference between abstract classes and interfaces?
+What is method hiding?
+What is polymorphism?
+Which data structure should you use if you have given a repository and multiple rows are retrieved in your process service class, and you are tasked with finding the latest version of the data that is being retrieved out of all rows based on the timestamp in the repository.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Goldman Sachs Tech Interview Questions on Data Structures and Algorithms 
+
+You have a sorted array arr[] of distinct integers. Arrange the elements into a sequence such that arr[1] >= arr[2] <= arr[3] >= arr[4] <= arr[5]..
+Find the contiguous subarray within an array, A of length N, which has the largest sum.
+What is a linked list, and what are its types? 
+Can doubly-linked be implemented using a single pointer variable in every node? 
+Given a list of nonnegative integers, arrange them such that they form the largest number. For example:  Given [3, 30, 34, 5, 9], the largest formed number is 9534330.
+How will you implement a queue using a stack? 
+Can you check if a given Binary Tree is BST or not? 
+Given a positive integer n and a string s consisting only of letters D or I, you have to find any permutation of the first n positive integer that satisfies the given input string. D means the next number is smaller, while I means the next number is greater. Note that the length of given string s will always equal to n - 1, and the solution should be in linear time and space. 
+Which data structures are used for the BFS and DFS of a graph?
+What are Infix, prefix, Postfix notations?
+Given an array, find the pivot/position where the left sum of the array is equal to the right sum.
+Given an array, find the minimum length sub-array with a given sum.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Goldman Sachs Tech Interview Questions on Systems Design
+
+Explain load balancing and why is it important to system design?
+Explain the steps of designing a search engine?
+Take us through the steps of incorporating microservices into an e-commerce platform?
+Can you explain the process of creating a global file-sharing or storage system?
+Can you explain the process for creating a chat or messaging system?
+Tell me about the type of algorithm you would use to create a newsfeed for a social media website?
+What, according to you, are the critical components for designing an e-commerce website?
+What are parking lot systems, and how are they designed?
+How will you determine the goal and scale of a system?
+Can you name some techniques used to stream large amounts of data on or off of a server?
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Behavioral Interview Questions in Goldman Sachs Tech Interview 
+Describe a conflict you had with a colleague in the past. How did you solve the conflict?
+Describe a time when you went above and beyond with your customer service.
+What does integrity mean to you?
+Tell us about an obstacle you overcame.
+What are the things that you value the most in a job?
+What’s the biggest misconception that your co-workers have about you. And why?
+Why would you choose to work at Goldman Sachs?
+Tell us about a time when you had to work under very close supervision?
+Describe the best manager under which you had to work. What did you learn?
+How do you decide how much time is needed for a particular task?
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+What are verification and validation?
+ Name two tools that are used for keeping track of software requirements?
+What language do you like to write programming algorithms?
+What is mean by software scope?
+ How can you measure project execution?
+What is cohesion?
+What are the various phases of SDLC?
+How can we derive the size of the software product?
+What is SRS?
+What actions are taken during a feasibility study?
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Algorithm Engineer:
+
+What is a Hash Table, and what are the average case and worst-case times for each of its operations? Tell me about the way one can use this structure to find all anagrams in a dictionary?
+Write the algorithm to reverse a string.
+What are Red-Black Trees and B-Trees? What is the best use case for each of them?
+Is it possible to implement a Binary search Algorithm without recursion?
+You have a set of data intervals represented by StartDate and EndDate. How would you efficiently calculate the longest timespan covered by them? Explain the time complexity.
+What is A*, and what are its implementation details?
+Explain how divide-and-conquer algorithms work. Discuss a few examples where this approach can be used.
+Suppose you need to design a scheduler that to schedule a set of tasks. There are several tasks that need to wait, and other tasks have to be completed before that. What algorithm will you use to design the schedule, and how would you implement it?
+What are Divide and Conquer algorithms? Describe how they work.
+Explain how insertion sort, quicksort, heap sort, and merge sort work.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Senior Software Engineer: 
+
+What type of approach do you prefer — a microservice approach or a monolithic approach?
+What is your approach for doing Unit Testing for your peer’s code?
+What is your process to test and find the bugs in the application that you’ve developed?
+What factors do you consider when designing inventory management systems?
+How do you improve maintainability problems related to legacy code projects?
+What would you do to develop and enforce database confidentiality policies?
+How will you carry out debugging an entire system of applications?
+What kind of instrumentation do you apply to ensure high-performance architecture design?
+When would you consider a NoSQL design over an SQL design?
+How would you create an SQL database with sharding capabilities for geographical and time-series information?
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Backend Developer:
+
+What is the difference between PATCH and PUT?
+Explain the difference between design and architecture?
+What will you do to find the most expensive queries in an application?
+How do you deal with failures in a distributed system?
+When would you apply asynchronous communication between two systems?
+What is an MVC framework?
+How would you manage Web Services API versioning?
+Write a program to filter out only the alphabets from the provided Email Address and sort the alphabets. Also, put the sorted alphabets back to the Email Address without changing the positions of other characters.
+What is your preferred programming language?
+What is your experience with GoTo, and do you prefer structured programming?
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Front-end Developer:
+
+How do you make the structure of CSS and JavaScript easier to understand for other developers?
+What is CSS Rule?
+What are HTML meta tags?
+What is ReactJS?
+Explain the principles of SOLID.
+What is meant by user-centered design?
+Why should you use jQuery?
+Explain how variables differ in CoffeeScript from JavaScript?
+How will you optimize the page through front-end technology or code?
+Explain the differences between Block, Inline, Box-sizing, and Inline-block?
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Goldman Sachs Interview Questions for Freshers 
+What is Garbage Collection in Java?
+Explain hashCode() and equals() in Java.
+Differentiate between StringBuffer and StringBuilder classes in the context of Java.
+Explain the difference between an interface and an abstract class in Java?
+What are the differences between pointers and reference variables in C++?
+Tell us the difference between an interface and an abstract class in Java?
+What is a final keyword in Java?
+Goldman Sachs Interview Questions for Experienced Professionals
+What are different testing concepts? Define unit testing, integration testing, regression testing and explain the need for each one of them.
+What is the need for multiple environments for the same application?
+If you need to add a particular feature to an application, how will you do it? How will you document it, test it and take it through different environments of the application?
+Write the algorithm for a given list of transactions between friends who have to give or take some amount of money from one another. They have to settle up with a minimum number of transactions, and you have to return a list of all the transactions. If B owes A Rs. 200 : B->A = 200. Similarly, if C owes B Rs. 200 : C->B= 200. So the minimum number of transactions is 1, and that should be: C->A = Rs. 200.

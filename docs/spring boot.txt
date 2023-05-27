@@ -26,16 +26,50 @@ The architecture of Spring Boot is based on a few key components:
 
 Overall, the architecture of Spring Boot is designed to simplify and accelerate the development of Spring-based applications. It provides a set of pre-built components and tools that help developers to quickly and easily build and deploy applications, while also providing the flexibility to customize and extend the framework as needed.
 
-----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+https://docs.spring.io/spring-boot/docs/2.0.x/reference/html/using-boot-using-springbootapplication-annotation.html
+
+@SpringBootApplication annotation can be used to enable those three features
+
+@EnableAutoConfiguration: enable Spring Boot’s auto-configuration mechanism
+@ComponentScan: enable @Component scan on the package where the application is located (see the best practices)
+@Configuration: allow to register extra beans in the context or import additional configuration classes
+
+
+we use the @ComponentScan annotation along with the @Configuration annotation to specify the packages that we want to be scanned. @ComponentScan without arguments tells Spring to scan the current package and all of its sub-packages.
+@ComponentScan(basePackages = "com.baeldung.componentscan.springapp")
+ the @ComponentScan annotation can also scan, detect, and register beans for classes annotated with @Component, @Controller, @Service, and @Repository.
+ 
+
+Read more: https://www.java67.com/2018/05/difference-between-springbootapplication-vs-EnableAutoConfiguration-annotations-Spring-Boot.html#ixzz82Mxi2aST
+ 
+ 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Disabling Specific Auto-configuration Classes
+
+@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+
+If the class is not on the classpath, you can use the excludeName attribute of the annotation and specify the fully qualified name instead. Finally, you can also control the list of auto-configuration classes to exclude by using the spring.autoconfigure.exclude property.
+
+
+ @EnableAutoConfiguration annotation enables Spring Boot to auto-configure the application context. Therefore, it automatically creates and registers beans based on both the included jar files in the classpath and the beans defined by us.
+ @EnableAutoConfiguration feature tries to automatically configure your Spring application based upon the JAR dependency you have added in the classpath.
+ For example, if HSQLDB is on your classpath, and you have not manually configured any database connection beans, then Spring Boot auto-configures an in-memory database.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
-------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
-------------------------------------------------------------------------------------------------------------------------
-
-
-
-------------------------------------------------------------------------------------------------------------------------

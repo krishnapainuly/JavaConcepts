@@ -5,7 +5,7 @@ To allow two different systems to communicate with each other, there are several
 3. Service-Oriented Architecture (SOA): SOA is a software architecture that allows different systems to communicate with each other by exposing their functionality as services. In SOA, each system exposes its services through a standardized interface, and other systems can access those services using that interface.
 4. ETL (Extract, Transform, Load) Tools: ETL tools allow two different systems to communicate with each other by extracting data from one system, transforming it into a format that can be used by the other system, and loading it into the target system. ETL tools are commonly used for data integration and migration between different systems.
 5. Middleware: Middleware is software that sits between two different systems and enables them to communicate with each other. Middleware provides a layer of abstraction between the two systems, allowing them to communicate in a standardized way.
-----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
 
 what is the difference between microservices and restapi?
 Microservices and REST APIs are two different concepts, but they are often used together in modern software architectures.
@@ -15,7 +15,7 @@ Microservices refer to an approach to building software systems as a collection 
 REST (Representational State Transfer) is an architectural style for building distributed systems, in which resources are identified by URLs and can be manipulated using standard HTTP methods like GET, POST, PUT, and DELETE. RESTful APIs are a way to expose a software system's functionality over the web, and are often used in microservice architectures to provide a standardized way for services to communicate with each other.
 
 In summary, microservices refer to an approach to building software systems based on small, independent services, while RESTful APIs are a way to expose a software system's functionality over the web. RESTful APIs are often used in microservice architectures to provide a standardized way for services to communicate with each other.
-----------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
 
 what is a microservice? when it is used?
 A microservice is a small, independent, and loosely coupled service that performs a specific business task or function. Microservices architecture is an approach to software development where large, monolithic applications are broken down into smaller, independent services, each running in its own process and communicating with other services over lightweight protocols.
@@ -34,7 +34,8 @@ Microservices are used in situations where there is a need for rapid development
 
 Overall, microservices are used in situations where there is a need for a flexible, scalable, and resilient application architecture. They are particularly useful in modern, cloud-based environments where agility and speed of development are critical to business success.
 
-----------------------------------------------------------------------------------------------------------What happens when there is more microservices?
+----------------------------------------------------------------------------------------------
+What happens when there is more microservices?
 As the number of microservices in an application increases, the complexity of the system also increases. Here are some of the challenges that can arise when there are more microservices:
 
 1. Service discovery: With more microservices, it can become difficult to keep track of all the services that are running and their locations. Service discovery tools can help to manage this complexity, but they can add additional overhead to the system.
@@ -72,7 +73,7 @@ The 12 Factor App is a set of principles that provide guidance for building scal
 11. Logs: Treat logs as event streams.
 12. Admin processes: Run admin/management tasks as one-off processes.
 These factors promote the use of best practices in microservices design patterns, such as containerization, service discovery, fault tolerance, and scalability. By following these principles, developers can create applications that are scalable, reliable, and easy to manage.
-----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
 
 https://dzone.com/articles/design-patterns-for-microservices
 1. Decomposition Patterns
@@ -105,3 +106,29 @@ https://www.slideshare.net/chris.e.richardson/saturn-2018-managing-data-consiste
 https://medium.com/@arief.wara/in-memory-data-grid-fe0b367a7456
 
 gRPC
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microservice architecture is an architectural style used in software development to build complex applications as a collection of small, independent, and loosely coupled services. It structures an application as a set of small services that are responsible for specific business capabilities and can be developed, deployed, and scaled independently.
+
+In a microservice architecture, each service represents a specific functionality or business domain and can be developed by a separate team using different technologies or programming languages. These services communicate with each other through well-defined APIs (Application Programming Interfaces), typically using lightweight protocols such as HTTP/REST or messaging systems.
+
+Key characteristics of microservice architecture include:
+
+Service Independence: Each microservice is a standalone component with its own codebase, data storage, and business logic, allowing for independent development, deployment, and scaling.
+Single Responsibility: Each microservice focuses on a specific business capability or function, following the principle of single responsibility, which helps in easier maintenance and understanding of the system.
+Decentralized Data Management: Each microservice has its own dedicated data storage, often using databases or other data storage technologies specific to that service.
+Communication via APIs: Microservices communicate with each other through well-defined APIs, enabling loose coupling and allowing for flexibility in technology choices for each service.
+Scalability and Resilience: Microservices can be individually scaled based on demand, allowing for better resource utilization and fault isolation. If one service fails, it does not necessarily affect the entire system.
+Continuous Deployment and DevOps: The independent nature of microservices enables teams to develop, test, and deploy services independently, often following DevOps practices to automate deployment and monitoring.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+https://medium.com/javarevisited/50-microservices-interview-questions-for-java-programmers-70a4a68c4349
+
+
+Strategies to handle partial failure or make our service fault-tolerance
+
+1) Use asynchronous communication (for example, message-based communication) 
+2) Use retries with exponential backof: This might occur due to intermittent network issues or when a microservice/container is moved to a different node in a cluster
+3) Work around network timeouts
+4) Use the Circuit Breaker pattern.
+5) Provide fallbacks
+6) Limit the number of queued requests

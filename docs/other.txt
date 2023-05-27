@@ -13,7 +13,7 @@ What are the benefits of using continuous integration and continuous delivery?
 
 ----------------------------------------------------------------------------------------------------------
 
-
+https://www.geeksforgeeks.org/generics-in-java/
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -27,3 +27,45 @@ What are the benefits of using continuous integration and continuous delivery?
 
 
 ----------------------------------------------------------------------------------------------------------
+CI/CD good practices?
+
+Spring security
+Java 17 features
+DBMS partitioning
+Spring bean modification
+kAFKa replica
+leader follower
+
+stateless & statefull in streams
+parallel streams
+class lock & object lock
+difference between react class component & functional component
+differe b/w state & props
+web store?
+
+streams API
+Optional method in interface
+how to make immutable objects in java
+@SpringBoot
+@autoconfiguration
+override spring feature
+how to avoid error failure MS?
+add certificates to request
+RestController, Controller
+spring configurations in xml and pom
+relations one-many, any to one,
+repository jpa tag
+
+how do you create docker image?
+Docker, kubernetes 
+
+
+write code? 
+situational based qs
+Testing? 
+
+desing patterns in restful API
+different ways of inner communicatino between microservices
+Multiple thread in java services
+
+how to get response from multithreading microservices?

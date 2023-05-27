@@ -11,5 +11,6 @@ public class ForEach {
         gamesList.add("Chess");  
         gamesList.add("Hocky");
         gamesList.forEach(game -> System.out.println(game));
+        
 	}
 }

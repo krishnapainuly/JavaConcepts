@@ -28,8 +28,20 @@ HTTPS, on the other hand, is a secure version of HTTP. It uses a secure SSL/TLS 
 In summary, the main difference between HTTP and HTTPS is that HTTPS provides a layer of security by encrypting data, while HTTP does not.
 
 ----------------------------------------------------------------------------------------------------------
++---------+------+------------+
+| Method  | Safe | Idempotent |
++---------+------+------------+
+| CONNECT | no   | no         |
+| DELETE  | no   | yes        |
+| GET     | yes  | yes        |
+| HEAD    | yes  | yes        |
+| OPTIONS | yes  | yes        |
+| POST    | no   | no         |
+| PUT     | no   | yes        |
+| TRACE   | yes  | yes        |
++---------+------+------------+  
 
-
+GET, TRACE, OPTIONS, HEAD, PUT, DELETE are idempotent, whereas put & delete are not safe.
 ----------------------------------------------------------------------------------------------------------
 
 

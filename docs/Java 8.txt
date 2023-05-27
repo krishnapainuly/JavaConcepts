@@ -103,3 +103,5 @@ In Java, strings are immutable because of several reasons:
 Overall, immutability provides several benefits in Java, including security, thread safety, caching, and performance optimization, which makes it a preferred approach for strings.
 
 ----------------------------------------------------------------------------------------------------------
+
+https://www.digitalocean.com/community/tutorials/java-8-features-with-examples

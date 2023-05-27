@@ -34,3 +34,9 @@ Here are some key differences between SQL and NoSQL:
 5. Transactions: SQL databases support transactions, which ensure data integrity and reliability, while NoSQL databases may not support transactions or may only support them in a limited way.
 
 In summary, SQL databases are best suited for applications that require well-defined schema and strong consistency, while NoSQL databases are better suited for applications that require scalability, flexibility, and speed.
+
+
+Atomicity: The entire transaction takes place at once or doesn't happen at all
+Consistency: The database must be consistent before and after the transaction
+Isolation: Multiple transactions occur independently withoout interference
+Durability: The changes of a successful transaction occurs even if the system failure occurs.
