@@ -25,7 +25,24 @@ https://www.geeksforgeeks.org/generics-in-java/
 
 ----------------------------------------------------------------------------------------------------------
 
+ Streams & parallel streams?
+ immutable object? 
+ hashmap and concurrent map differences
+ hashmap hashcode returns 1, ........
+ exception handling microservices
+ sagas patterns
+ 
+ difference between react class component & functional component
+differe b/w state & props
+web store?
 
+streams API
+Optional method in interface
+how to make immutable objects in java
+
+
+
+ 
 ----------------------------------------------------------------------------------------------------------
 CI/CD good practices?
 

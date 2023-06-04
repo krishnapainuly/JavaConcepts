@@ -1,6 +1,7 @@
 package com.java8;
 import java.util.*;
-import java.util.stream.Collectors;  
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;  
 
 public class StreamsAPI {
 	public static void main(String args[]) {
@@ -30,6 +31,20 @@ public class StreamsAPI {
         // convert list to map
         Map<Integer, String> myMap = productsList.stream().collect(Collectors.toMap(p -> p.id,  p->p.name));
         System.out.println(myMap);
+        
+        
+	}
+	
+	/**Create an Arralylist that should have numbers 1-100 
+    but if the number is multiple of 3 then it should be replaced with word "Ping", 
+    and multiples of 5 should be replaced with word "Pong" and      multiples of both 3 and 5 with "PingPong" 
+    **/
+	public static void pingpong() {
+		List<String> arrayList = IntStream.rangeClosed(1, 100)
+				.mapToObj(i -> {
+					
+				});
+		
 	}
 }
 class Product{  

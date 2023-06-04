@@ -105,3 +105,36 @@ Overall, immutability provides several benefits in Java, including security, thr
 ----------------------------------------------------------------------------------------------------------
 
 https://www.digitalocean.com/community/tutorials/java-8-features-with-examples
+
+As stated above, Java stream operation are of two types intermediate and terminal. The intermediate operations are classified as stateful or stateless based on their ability to process elements independently.
+
+If each of the element can be processed independently without retaining any information for processing other elements, then they are stateless. If any information is retained for processing of other elements, then they are stateful.
+
+Stateless Intermediate Operations
+For example,
+
+map()
+filter()
+unsorted()
+peek()
+are stateless intermediate operations. Every individual element can be processed without the need for sharing information between them for processing.
+
+Stateful Intermediate Operations
+For example,
+
+sorted()
+distinct()
+limit()
+etc are known as stateful operations. Because elements cannot be processed individually, they need to be compared with one another thus requiring information to be retained.
+
+
+Terminal Operations
+Terminal operations consumes the stream pipeline. It does not produce another stream like intermediate operations. It produces a result or a side-effect.
+
+sum()
+min()
+max()
+count()
+average()
+collect()
+reduce()
